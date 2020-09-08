@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Фёдор Горохов](https://up.htmlacademy.ru/htmlcss/29/user/1263893).
-* Наставник: `Неизвестно`.
+* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/magomedkandaev).
 
 ---
 
