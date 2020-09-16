@@ -9,6 +9,7 @@
   --basic-brown-darker: #503E33;
   --basic-black: #000000;
   --basic-black-text: #333333;
+  -ffs: #3333;
 }
 
 
@@ -98,10 +99,6 @@ font-size: 21px;
 line-height: 21px;
 }
 
-.features-item-photo {
-  color: var(--basic-white);
-  background-color: var(--basic-turquoise);
-}
 
 .features-item-photo{
   color: var(--basic-white);
@@ -121,7 +118,7 @@ line-height: 21px;
 
 .features-item.tourist-features {
   background-color: var(--basic-light-grey);
-  padding: 0;
+
 }
 
 .search-form {
