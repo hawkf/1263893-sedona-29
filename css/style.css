@@ -97,14 +97,12 @@ font-size: 21px;
 line-height: 21px;
 }
 
-.features-item  .text-photo {
+.features-item-photo {
   color: var(--basic-white);
   background-color: var(--basic-turquoise);
 }
 
-
-
-.features-list  li:nth-child(3){
+.features-item-photo{
   color: var(--basic-white);
   background-color: var(--basic-turquoise);
 }
@@ -120,7 +118,9 @@ line-height: 21px;
   color: var(--basic-black-text);
 }
 
-
+.features-item .tourist-features {
+  background-color: var(--basic-light-grey);
+}
 
 .search-form {
   text-align: center;
@@ -170,4 +170,6 @@ color: var(--basic-black);
 .footer-social li {
   list-style: none;
 }
+
+
 
