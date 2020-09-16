@@ -83,15 +83,16 @@ img {
   color: var(--basic-black-text);
 }
 
-.feature-list {
+.features-list {
   list-style: none;
-}
-
-.feature-item {
   text-align: center;
 }
 
-.feature-item h3 {
+.features-item {
+  text-align: center;
+}
+
+.features-item h3 {
 font-weight: 700;
 font-size: 21px;
 line-height: 21px;
@@ -118,8 +119,9 @@ line-height: 21px;
   color: var(--basic-black-text);
 }
 
-.features-item .tourist-features {
+.features-item.tourist-features {
   background-color: var(--basic-light-grey);
+  padding: 0;
 }
 
 .search-form {
