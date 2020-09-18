@@ -53,17 +53,18 @@ img {
   list-style: none;
 }
 
-.main-navigation a,
-.site-navigation a {
+.site-navigation a{
   color: var(--basic-black);
 }
 
-.main-navigation a:hover,
-.site-navigation a:hover {
+
+.site-navigation a:hover,
+.site-navigation a:focus
+ {
   color: var(--basic-turquoise);
 }
-.main-navigation a:focus,
-.site-navigation a:focus {
+
+.site-navigation a:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
@@ -98,6 +99,9 @@ img {
   line-height: 21px;
 }
 
+.number {
+  line-height: 21px;
+}
 
 .features-item-photo{
   color: var(--basic-white);
@@ -133,7 +137,7 @@ img {
 .search-form  .search-button {
   font-weight: 700;
   font-size: 21px;
-  font-family: inherit;
+  font: "PT Sans";
   line-height: 26px;
   text-align: center;
   background-color: var(--basic-brown);
