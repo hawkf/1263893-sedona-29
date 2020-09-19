@@ -36,6 +36,9 @@ img {
   height: auto;
 }
 
+button {
+  font: inherit;
+}
 /* Main navigation */
 
 .page-body {
@@ -137,7 +140,6 @@ img {
 .search-form  .search-button {
   font-weight: 700;
   font-size: 21px;
-  font: "PT Sans";
   line-height: 26px;
   text-align: center;
   background-color: var(--basic-brown);
