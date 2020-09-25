@@ -163,6 +163,10 @@ button {
   background-color: var(--basic-brown-darker);
 }
 
+.hotels-filter {
+  background-image: url(img/background-inner-page-filter);
+}
+
 .found {
   font-size: 21px;
   line-height: 26px;
@@ -222,6 +226,7 @@ button {
    border: 0px;
    padding: 3px 16px 3px 17px;
    color: var(--basic-white);
+   text-transform: uppercase;
  }
 
  .details-button:hover,
@@ -235,6 +240,8 @@ button {
   font-weight: bold;
   border: 0px;
   padding: 3px 17px 3px 16px;
+  color: var(--basic-white);
+  text-transform: uppercase;
  }
  .to-book-button:hover,
  .to-book-button:focus {
@@ -250,8 +257,6 @@ button {
    color: var(--basіс-grey-text);
  }
 
-
-
 .page-footer {
   background-color: var(--basic-white-transparent)
 }
@@ -265,6 +270,14 @@ color: var(--basic-black);
 
 .footer-social li {
   list-style: none;
+  background-color: var(--basic-turquoise)
+
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
 }
 
 
