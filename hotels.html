@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,10 +9,10 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
+<body class="page-body inner-page">
+  <header class="page-header">
     <nav class="main-navigation">
-      <a href="index.html" class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
       </a>
       <ul class="site-navigation">
@@ -30,96 +30,96 @@
     </section>
     <section>
       <h2>Сортировка отелей</h2>
-      <p>Найдено: 3</p>
-      <p>Сортировка:</p>
-      <ul>
-        <li>
+      <p class="found">Найдено: 3</p>
+      <p class="sort">Сортировка:</p>
+      <ul class="sort-list">
+        <li class="sort-item">
           <button type="button">По цене</button>
         </li>
-        <li>
+        <li class="sort-item">
           <button type="button">По типу</button>
         </li>
-        <li>
+        <li class="sort-item">
           <button type="button">По рейтингу</button>
         </li>
       </ul>
-      <button type="button" name="up">up</button>
-      <button type="button" name="down">down</button>
+      <div class="button-up-down">
+        <button class="up-button" type="button" name="up"><img src="img/icon-up-dir.svg" alt=""/></button>
+        <button class="down-button" type="button" name="down"><img src="img/icon-down-dir.svg" alt=""/></button>
+      </div>
     </section>
     <section>
       <h2>Список отелей</h2>
-      <ul>
-        <li>
-          <img src="img/Amara-hotel.png" width="135" height="90" alt="Вид на гостиницу Amara Resort & Spa" />
-          <div>
-            <h3>Amara Resort & Spa</h3>
-            <div>
+      <ul class="hotels-list">
+        <li class="hotel-item">
+          <img class="hotel-photo" src="img/Amara-hotel.png" width="135" height="90" alt="Вид на гостиницу Amara Resort & Spa" />
+          <div class="description">
+            <h3 class="hotel-name">Amara Resort & Spa</h3>
+            <div class="price">
               <span>Гостиница</span>
               <span>От 4000 Р.</span>
             </div>
-            <div>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+            <div class="hotel-buttons">
+              <button class="details-button" type="button">Подробнее</button>
+              <button class="to-book-button" type="button">Забронировать</button>
             </div>
           </div>
-          <div>
-            <ul>
-              <li><img src="img/star.svg" alt="" /></li>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
+          <div class="hotel-class">
+            <ul class="star-list">
+              <li class="star-item"><img src="img/star.svg" alt="" /></li>
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
             </ul>
-            <p>Рейтинг: 8,5</p>
+            <p class="rating">Рейтинг: 8,5</p>
           </div>
         </li>
-        <li>
-          <img src="img/desert-hotel.png" width="135" height="90" alt="Вид на мотель Desert Quail Inn" />
-          <div>
-            <h3>Desert Quail Inn</h3>
-            <div>
+        <li class="hotel-item">
+          <img class="hotel-photo" src="img/desert-hotel.png" width="135" height="90" alt="Вид на мотель Desert Quail Inn" />
+          <div class="description">
+            <h3 class="hotel-name">Desert Quail Inn</h3>
+            <div class="price">
               <span>Мотель</span>
               <span>От 3000 Р.</span>
             </div>
-            <div>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+            <div class="hotel-buttons">
+              <button class="details-button" type="button">Подробнее</button>
+              <button class="to-book-button" type="button">Забронировать</button>
             </div>
           </div>
-          <div>
-            <ul>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
+          <div class="hotel-class">
+            <ul class="star-list">
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
             </ul>
-            <p>Рейтинг: 8,9</p>
+            <p class="rating">Рейтинг: 8,9</p>
           </div>
         </li>
-        <li>
-          <img src="img/villas-hotel.png" width="135" height="90" alt="Вид на аппартамнеты Villas at Poco Diablo" />
-          <div>
-            <h3>Villas at Poco Diablo</h3>
-            <div>
+        <li class="hotel-item">
+          <img class="hotel-photo" src="img/villas-hotel.png" width="135" height="90" alt="Вид на аппартамнеты Villas at Poco Diablo" />
+          <div class="description">
+            <h3 class="hotel-name">Villas at Poco Diablo</h3>
+            <div class="price">
               <span>Апартаменты</span>
               <span>От 2000 Р.</span>
             </div>
-            <div>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+            <div class="hotel-buttons">
+              <button class="details-button" type="button">Подробнее</button>
+              <button class="to-book-button" type="button">Забронировать</button>
             </div>
           </div>
-          <div>
-            <ul>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
-              <li><img src="img/star_without_borders.svg" alt="" /></li>
+          <div class="hotel-class">
+            <ul class="star-list">
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
+              <li class="star-item"><img src="img/star_without_borders.svg" alt="" /></li>
             </ul>
-            <p>Рейтинг: 9,2</p>
+            <p class="rating">Рейтинг: 9,2</p>
           </div>
         </li>
       </ul>
     </section>
-
   </main>
-
   <footer class="page-footer">
     <div class="footer-contacts">
       <h2>Как с нами связаться</h2>
@@ -144,7 +144,6 @@
     </div>
     <a class="copyright" href="https://htmlacademy.ru/">website by</a>
   </footer>
-
 </body>
 
 </html>

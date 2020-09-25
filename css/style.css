@@ -3,12 +3,16 @@
   --basic-white: #FFFFFF;
   --basic-white-transparent: rgba(255, 255, 255, 0.9);
   --basic-turquoise: #81B3D2;
+  --basic-turquoise-dark: #669EC0;
+  --basic-turquise-darker: #5496BD;
   --basic-light-grey: #EEEEEE;
   --basic-brown: #766357;
   --basic-brown-dark: #604E43;
   --basic-brown-darker: #503E33;
   --basic-black: #000000;
   --basic-black-text: #333333;
+  --basіс-grey-text: #666666;
+  --rating-color: #F2F2F2;
   }
 
 
@@ -19,7 +23,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   color: var(--basic-black-text);
   text-transform: uppercase;
@@ -43,6 +47,7 @@ button {
 
 .page-body {
   background-color: var(--basic-white);
+  width: 1200px;
 }
 
 .main-navigation {
@@ -157,6 +162,93 @@ button {
   opacity: 0.3;
   background-color: var(--basic-brown-darker);
 }
+
+.found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort, .sort-list {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list {
+  list-style: none;
+}
+ .sort-item button {
+   border: 0;
+   background-color: transparent;
+   opacity: 0.3;
+   border-bottom: 1px dashed var(--basic-turquoise);
+ }
+
+ .sort-item button:hover,
+ .sort-item button:focus {
+   color: var(--basic-turquoise);
+ }
+
+ .sort-item button:active {
+  border: 0;
+  opacity: 1;
+  color: var(--basic-black);
+ }
+
+ .up-button {
+   background-color: transparent;
+   border: 0;
+ }
+
+ .down-button {
+  background-color: transparent;
+  border: 0;
+ }
+
+ .hotels-list {
+   list-style: none;
+ }
+
+ .hotel-name {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+ }
+
+ .details-button {
+   background: var(--basic-turquoise);
+   font: inherit;
+   font-weight: bold;
+   border: 0px;
+   padding: 3px 16px 3px 17px;
+   color: var(--basic-white);
+ }
+
+ .details-button:hover,
+ .details-button:focus {
+   background-color: var(--basic-turquoise-dark);
+ }
+
+ .to-book-button {
+  background: var(--basic-brown);
+  font: inherit;
+  font-weight: bold;
+  border: 0px;
+  padding: 3px 17px 3px 16px;
+ }
+ .to-book-button:hover,
+ .to-book-button:focus {
+   background-color: var(--basic-brown-dark);
+ }
+
+ .star-list {
+   list-style: none;
+ }
+
+ .rating {
+   background-color: var(--rating-color);
+   color: var(--basіс-grey-text);
+ }
 
 
 
