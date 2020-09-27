@@ -60,16 +60,6 @@ button {
 
 .page-header {
   margin-bottom: 70px;
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-
-}
-
-.main-header-logo {
-  grid-column-start: 1;
-  grid-column-end: 2;
 }
 
 .main-navigation {
@@ -100,6 +90,11 @@ button {
   opacity: 0.3;
 }
 
+.container-h {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
 .container h1 {
   font-weight: 700;
   font-size: 21px;
@@ -117,6 +112,10 @@ button {
   color: var(--basic-black-text);
   text-align: center;
   margin-bottom: 70px;
+}
+
+.foto-sedona-nature {
+  grid-row: 0 / 1;
 }
 
 .features-list {
@@ -173,10 +172,13 @@ features-list li:first-child {
 .tourist-features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .tourist-features {
   background-color: var(--basic-light-grey);
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .search-form {
@@ -331,8 +333,6 @@ features-list li:first-child {
 
 .page-footer {
   background-color: var(--basic-white-transparent);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;

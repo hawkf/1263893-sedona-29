@@ -26,9 +26,12 @@
     </nav>
   </header>
   <main class="container">
-    <img src="img/background-photo.jpg" width="1200" height="509" alt="Изображение природы возле города Седона" />
-    <h1>Седона - небольшой город в Аризоне,<br> заслуживающий большего</h1>
-    <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+    <div class="container-h">
+      <h1>Седона - небольшой город в Аризоне,<br> заслуживающий большего</h1>
+      <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+      <img class="foto-sedona-nature" src="img/background-photo.jpg" width="1200" height="509"
+        alt="Изображение природы возле города Седона" />
+    </div>
     <section class="features">
       <ol class="features-list">
         <li class="features-item features-item-photo">
@@ -53,14 +56,13 @@
             </li>
           </ul>
         </li>
-        <li class="features-item features-item features-item-photo">
+        <li class="features-item features-item-photo">
+          <img src="img/image-bridge.jpg" width="800" height="256" alt="Мост дьявола">
           <div>
             <h3>Там есть мост дьявола</h3>
             <span class="number">-№2-</span>
             <p class="number">Да, но по нему можно пройтись! Если конечно вы осмелитесь</p>
           </div>
-          <img src="img/image-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-
         </li>
         <div class="tourist-features-grid">
           <li class="tourist-features">
@@ -71,31 +73,31 @@
             </div>
           </li>
 
-            <li class="tourist-features">
-              <div>
-                <h3>Красивая дорога</h3>
-                <span class="number">-№4-</span>
-                <p class="number">Ехать в Седону из Лас-Вегаса совсе<br> не скучно!</p>
-              </div>
-            </li>
-            <li class="tourist-features">
-              <div>
-                <h3>Мало туристов</h3>
-                <span class="number">-№5-</span>
-                <p class="number">Большинство едет в Гранд каньон<br> и толпится там</p>
-              </div>
-            </li>
-          </div>
+          <li class="tourist-features">
+            <div>
+              <h3>Красивая дорога</h3>
+              <span class="number">-№4-</span>
+              <p class="number">Ехать в Седону из Лас-Вегаса совсе<br> не скучно!</p>
+            </div>
+          </li>
+          <li class="tourist-features">
+            <div>
+              <h3>Мало туристов</h3>
+              <span class="number">-№5-</span>
+              <p class="number">Большинство едет в Гранд каньон<br> и толпится там</p>
+            </div>
+          </li>
+        </div>
       </ol>
     </section>
     <section class="search-form">
-      <h2>Форма поиска отеля</h2>
+      <h2 style="display: none;">Форма поиска отеля</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="search-button" name="serch-hotel">поиск гостиницы в седоне</button>
     </section>
     <section class="map">
-      <h2>Карта</h2>
+      <h2 style="display: none;">Карта</h2>
       <img src="img/map.png" width="1199" height="594" alt="Карта">
     </section>
   </main>
@@ -111,10 +113,10 @@
       <h2 style="display: none;">Соц. сети</h2>
       <ul class="social-list">
         <li class="social-item">
-          <div><a href="#"><img src="img/twitter.svg" alt="Логотип твитера" /></a></div>
+          <a href="#"><img src="img/twitter.svg" alt="Логотип твитера" /></a>
         </li>
         <li class="social-item">
-          <div><a href="#"><img src="img/fb-icon.svg" alt="Логотип фейсбука" /></a></div>
+          <a href="#"><img src="img/fb-icon.svg" alt="Логотип фейсбука" /></a>
         </li>
         <li class="social-item">
           <a href="#"><img src="img/youtube.svg" alt="Логотип ютуба" /></a>
