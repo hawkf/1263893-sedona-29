@@ -12,9 +12,11 @@
 <body class="page-body">
   <header class="page-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
-      </a>
+      <div class=main-logo>
+        <a class="main-header-logo">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
+        </a>
+      </div>
       <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
@@ -24,15 +26,17 @@
     </nav>
   </header>
   <main class="container">
-    <h1>Седона - небольшой город в Аризоне, заслуживающий большего</h1>
-    <img src="img/background-photo.jpg" width="1200" height="509" alt="Изображение природы возле города Седона"/>
+    <img src="img/background-photo.jpg" width="1200" height="509" alt="Изображение природы возле города Седона" />
+    <h1>Седона - небольшой город в Аризоне,<br> заслуживающий большего</h1>
     <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
     <section class="features">
       <ol class="features-list">
         <li class="features-item features-item-photo">
-          <h3>Настоящий городок</h3>
-          <span class="number">-№1-</span>
-          <p>Седона - не отракцион для туристов, там течет своя жизнь</p>
+          <div>
+            <h3>Настоящий городок</h3>
+            <span class="number">-№1-</span>
+            <p>Седона - не отракцион для туристов, там течет своя жизнь</p>
+          </div>
           <img src="img/image-town.jpg" width="800" height="256" alt="Описание города Седона">
           <ul class="convenience">
             <li class="convenience-item">
@@ -49,27 +53,39 @@
             </li>
           </ul>
         </li>
-        <li class="feture-item features-item-photo">
-          <h3>Там есть мост дьявола</h3>
-          <span class="number">-№2-</span>
-          <p class="number">Да, но по нему можно пройтись! Если конечно вы осмелитесь</p>
+        <li class="features-item features-item features-item-photo">
+          <div>
+            <h3>Там есть мост дьявола</h3>
+            <span class="number">-№2-</span>
+            <p class="number">Да, но по нему можно пройтись! Если конечно вы осмелитесь</p>
+          </div>
           <img src="img/image-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+
         </li>
-        <li class="features-item tourist-features">
-          <h3>Небольшая площадь</h3>
-          <span class="number">-№3-</span>
-          <p class="number">Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="features-item tourist-features">
-          <h3>Красивая дорога</h3>
-          <span class="number">-№4-</span>
-          <p class="number">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="features-item tourist-features">
-          <h3>Мало туристов</h3>
-          <span class="number">-№5-</span>
-          <p class="number">Большинство едет в Гранд каньон и толпится там</p>
-        </li>
+        <div class="tourist-features-grid">
+          <li class="tourist-features">
+            <div>
+              <h3>Небольшая площадь</h3>
+              <span class="number">-№3-</span>
+              <p class="number">Все достопримечательности<br> находятся очень близко</p>
+            </div>
+          </li>
+
+            <li class="tourist-features">
+              <div>
+                <h3>Красивая дорога</h3>
+                <span class="number">-№4-</span>
+                <p class="number">Ехать в Седону из Лас-Вегаса совсе<br> не скучно!</p>
+              </div>
+            </li>
+            <li class="tourist-features">
+              <div>
+                <h3>Мало туристов</h3>
+                <span class="number">-№5-</span>
+                <p class="number">Большинство едет в Гранд каньон<br> и толпится там</p>
+              </div>
+            </li>
+          </div>
       </ol>
     </section>
     <section class="search-form">
@@ -85,27 +101,28 @@
   </main>
   <footer class="page-footer">
     <div class="footer-contacts">
-      <h2>Как с нами связаться</h2>
+      <h2 style="display: none;">Как с нами связаться</h2>
       <p>
         #VISITSEDONA<br>
         ТЕЛ:+7(495) 666-01-66
       </p>
     </div>
     <div class="footer-social">
-      <h2>Соц. сети</h2>
-      <ul>
-        <li>
-          <a href="#"><img src="img/twitter.svg" alt="Логотип твитера"/></a>
+      <h2 style="display: none;">Соц. сети</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <div><a href="#"><img src="img/twitter.svg" alt="Логотип твитера" /></a></div>
         </li>
-        <li>
-          <a href="#"><img src="img/fb-icon.svg" alt="Логотип фейсбука"/></a>
+        <li class="social-item">
+          <div><a href="#"><img src="img/fb-icon.svg" alt="Логотип фейсбука" /></a></div>
         </li>
-        <li>
-          <a href="#"><img src="img/youtube.svg" alt="Логотип ютуба"/></a>
+        <li class="social-item">
+          <a href="#"><img src="img/youtube.svg" alt="Логотип ютуба" /></a>
         </li>
       </ul>
     </div>
-    <a class="copyright" href="https://htmlacademy.ru/">website by<img src="img/logo-htmlacademy.svg" alt="Логотип HTML академии"/></a>
+    <a class="copyright" href="https://htmlacademy.ru/">website by<img src="img/logo-htmlacademy.svg"
+        alt="Логотип HTML академии" /></a>
   </footer>
 </body>
 
