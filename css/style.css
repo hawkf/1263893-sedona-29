@@ -45,13 +45,18 @@ button {
   font: inherit;
 }
 /* Main navigation */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .page {
   height: 100%;
 }
 
 .page-body {
   background-color: var(--basic-white);
-  width: 1200px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -71,6 +76,8 @@ button {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a{
@@ -115,11 +122,13 @@ button {
 }
 
 .foto-sedona-nature {
-  grid-row: 0 / 1;
+  grid-row: 1 / 2;
 }
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
   display: grid;
 
