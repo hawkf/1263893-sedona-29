@@ -78,6 +78,11 @@ button {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 73px;
+  margin-right: 73px;
 }
 
 .site-navigation a{
