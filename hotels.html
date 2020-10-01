@@ -10,46 +10,54 @@
 </head>
 
 <body class="page-body inner-page">
-  <header class="page-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
-      </ul>
-    </nav>
+  <header class="container">
+    <div class="page-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li>
+            <div class=main-logo>
+              <a class="main-header-logo">
+                <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
+              </a>
+            </div>
+          </li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="container">
-    <h1>Отели города Седона</h1>
+    <h1 style="display: none;">Отели города Седона</h1>
     <section class="hotels-filter">
       <h2>Фильтр отелей</h2>
     </section>
-    <section>
-      <h2>Сортировка отелей</h2>
-      <p class="found">Найдено: 3</p>
-      <p class="sort">Сортировка:</p>
-      <ul class="sort-list">
-        <li class="sort-item">
-          <button type="button">По цене</button>
-        </li>
-        <li class="sort-item">
-          <button type="button">По типу</button>
-        </li>
-        <li class="sort-item">
-          <button type="button">По рейтингу</button>
-        </li>
-      </ul>
+    <section class="hotel-sort">
+      <div>
+        <h2 style="display: none;">Сортировка отелей</h2>
+        <p class="found">Найдено: 3</p>
+        <p class="sort">Сортировка:</p>
+        <ul class="sort-list">
+          <li class="sort-item">
+            <button type="button">По цене</button>
+          </li>
+          <li class="sort-item">
+            <button type="button">По типу</button>
+          </li>
+          <li class="sort-item">
+            <button type="button">По рейтингу</button>
+          </li>
+        </ul>
+      </div>
       <div class="button-up-down">
-        <button class="up-button" type="button" name="up"><img src="img/icon-up-dir.svg" alt="" /></button>
-        <button class="down-button" type="button" name="down"><img src="img/icon-down-dir.svg" alt="" /></button>
+        <button class="up-button" type="button" name="up"> <img src="img/icon-up-dir.svg" alt="" /></button>
+        <button class="down-button" type="button" name="down"> <img src="img/icon-down-dir.svg" alt="" /></button>
       </div>
     </section>
     <section>
-      <h2>Список отелей</h2>
+      <h2 style="display: none;">Список отелей</h2>
       <ul class="hotels-list">
         <li class="hotel-item">
           <img class="hotel-photo" src="img/Amara-hotel.png" width="135" height="90"
@@ -123,29 +131,34 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="footer-contacts">
-      <h2>Как с нами связаться</h2>
-      <p>
-        #VISITSEDONA<br>
-        ТЕЛ:+7(495) 666-01-66
-      </p>
+  <footer class="container">
+    <div class="page-footer">
+      <div class="footer-contacts">
+        <h2 style="display: none;">Как с нами связаться</h2>
+        <p>
+          #VISITSEDONA<br>
+          ТЕЛ:+7(495) 666-01-66
+        </p>
+      </div>
+      <div class="footer-social">
+        <h2 style="display: none;">Соц. сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#"><img src="img/twitter.svg" alt="Логотип твитера" /></a>
+          </li>
+          <li class="social-item">
+            <a href="#"><img src="img/fb-icon.svg" alt="Логотип фейсбука" /></a>
+          </li>
+          <li class="social-item">
+            <a href="#"><img src="img/youtube.svg" alt="Логотип ютуба" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <a href="https://htmlacademy.ru/">website by<img src="img/logo-htmlacademy.svg"
+            alt="Логотип HTML академии" /></a>
+      </div>
     </div>
-    <div class="footer-social">
-      <h2>Соц. сети</h2>
-      <ul>
-        <li>
-          <a href="#"><img src="img/twitter.svg" alt="Логотип твитера"/></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/fb-icon.svg" alt="Логотип фейсбука"/></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/youtube.svg" alt="Логотип ютуба"/></a>
-        </li>
-      </ul>
-    </div>
-    <a class="copyright" href="https://htmlacademy.ru/">website by<img src="img/logo-htmlacademy.svg" alt="Логотип HTML академии"/></a>
   </footer>
 </body>
 

@@ -49,6 +49,7 @@ button {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .page {
@@ -74,6 +75,12 @@ button {
   color: var(--basic-black);
 }
 
+.main-header-logo {
+  position: absolute;
+  left: 531px;
+
+}
+
 .site-navigation {
   list-style: none;
   margin: 0;
@@ -83,6 +90,12 @@ button {
   align-items: center;
   margin-left: 73px;
   margin-right: 73px;
+  position: relative;
+  top: 0;
+}
+
+.site-navigation li:nth-of-type(2) {
+  margin-right: 416px;
 }
 
 .site-navigation a{
@@ -183,9 +196,12 @@ features-list li:first-child {
 
 }
 
-.tourist-features-grid {
+.tourist-features-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -231,6 +247,15 @@ features-list li:first-child {
   background-image: url(img/background-inner-page-filter);
 }
 
+.hotel-sort {
+  display: grid;
+  grid-template-columns: 1fr 23px;
+}
+
+.button-up-down {
+  display: flex;
+}
+
 .found {
   font-size: 21px;
   line-height: 26px;
@@ -245,7 +270,26 @@ features-list li:first-child {
 
 .sort-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+.hotel-item {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  gap: 29px;
+}
+
+.description {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hotel-class {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
  .sort-item button {
    border-color: transparent;
    background-color: transparent;
@@ -343,6 +387,9 @@ features-list li:first-child {
  .rating {
    background-color: var(--rating-color);
    color: var(--basіс-grey-text);
+   height: 27px;
+   width: 110px;
+   text-align: center;
  }
 
 .page-footer {
