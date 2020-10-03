@@ -249,7 +249,7 @@ features-list li:first-child {
 
 .hotel-sort {
   display: grid;
-  grid-template-columns: 1fr 23px;
+  grid-template-columns: 1fr 34px;
 }
 
 .button-up-down {
@@ -274,15 +274,22 @@ features-list li:first-child {
   padding: 0;
 }
 
+.hotels-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
 .hotel-item {
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  grid-template-columns: 135px 1fr min-content;
   gap: 29px;
 }
 
 .description {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content min-content min-content;
 }
 
 .hotel-class {
@@ -316,10 +323,6 @@ features-list li:first-child {
  .down-button {
   background-color: transparent;
   border: 0;
- }
-
- .hotels-list {
-   list-style: none;
  }
 
  .hotel-name {
