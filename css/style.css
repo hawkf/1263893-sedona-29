@@ -547,6 +547,38 @@ features-list li:first-child {
   top:-17px;
 }
 
+.price-controls {
+  width: 313px;
+  height: 32px;
+  border: 2px solid var(--basic-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.price-controls input {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: var(--basic-white);
+  margin-left: 5px;
+
+}
+
+.filter-button {
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  background-color: transparent;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-size: 14px;
+  align-self: center;s
+}
+
 
 
  /*Footer*/
