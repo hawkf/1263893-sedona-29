@@ -30,13 +30,71 @@
     </div>
   </header>
   <main class="container">
-    <h1 style="display: none;">Отели города Седона</h1>
+    <h1 class="visually-hidden">Отели города Седона</h1>
     <section class="hotels-filter">
-      <h2>Фильтр отелей</h2>
+      <h2 class="visually-hidden">Фильтр отелей</h2>
+      <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item">
+          <legend>Инфраструктура:</legend>
+            <ul class="hotel-filter-list">
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                <label for="filter-swimming-pool">Бассейн</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wifi" id="filter-wifi">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="filter-item">
+          <legend>Тип жилья:</legend>
+          <ul class="hotel-filter-list">
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-item">
+          <legend>Стоимость в сутки (Р):</legend>
+          <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price">
+                от<input type="number" name="min-price" value="0">
+              </label>
+              <label class="min-price">
+                до<input type="number" name="max-price" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+              </div>
+              <div class="bar">
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            </div>
+          </div>
+          <button class="filter-button" type="button" name="show">Показать</button>
+        </fieldset>
+      </form>
     </section>
     <section class="hotel-sort">
-      <div>
-        <h2 style="display: none;">Сортировка отелей</h2>
+      <div class="hotel-sort-type">
+        <h2 class="visually-hidden">Сортировка отелей</h2>
         <p class="found">Найдено: 3</p>
         <p class="sort">Сортировка:</p>
         <ul class="sort-list">
@@ -57,7 +115,7 @@
       </div>
     </section>
     <section>
-      <h2 style="display: none;">Список отелей</h2>
+      <h2 class="visually-hidden">Список отелей</h2>
       <ul class="hotels-list">
         <li class="hotel-item">
           <img class="hotel-photo" src="img/Amara-hotel.png" width="135" height="90"
@@ -134,14 +192,14 @@
   <footer class="container">
     <div class="page-footer">
       <div class="footer-contacts">
-        <h2 style="display: none;">Как с нами связаться</h2>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
         <p>
           #VISITSEDONA<br>
           ТЕЛ:+7(495) 666-01-66
         </p>
       </div>
       <div class="footer-social">
-        <h2 style="display: none;">Соц. сети</h2>
+        <h2 class="visually-hidden">Соц. сети</h2>
         <ul class="social-list">
           <li class="social-item">
             <a href="#"><img src="img/twitter.svg" alt="Логотип твитера" /></a>

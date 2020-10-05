@@ -14,6 +14,7 @@
   --basic-black-text: #333333;
   --basіс-grey-text: #666666;
   --rating-color: #F2F2F2;
+  --toggle-color: #ABABAB;
   }
 
 
@@ -43,6 +44,19 @@ img {
 
 button {
   font: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* Main navigation */
 .container {
@@ -252,6 +266,38 @@ features-list li:first-child {
   grid-template-columns: 1fr 34px;
 }
 
+.hotel-sort-type {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.found {
+  margin-right: 48px;
+}
+
+.sort {
+  margin-right: 41px;
+}
+
+
+.sort-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sort-list li {
+  margin-right: 34px;
+}
+
+.sort-list:last-child{
+  margin-right: 0;
+}
+
 .button-up-down {
   display: flex;
 }
@@ -268,11 +314,6 @@ features-list li:first-child {
 
 }
 
-.sort-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .hotels-list {
   list-style: none;
@@ -385,6 +426,19 @@ features-list li:first-child {
 
  .star-list {
    list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+ }
+
+ .star-item {
+   margin-right: 6px;
+ }
+
+ .star-item:last-child {
+   margin-right: 0px;
  }
 
  .rating {
@@ -394,6 +448,108 @@ features-list li:first-child {
    width: 110px;
    text-align: center;
  }
+
+ /*Hotel filter*/
+
+ .filter {
+   background-image: url(/img/background-inner-page-filter.png);
+   background-repeat: no-repeat;
+   background-color: #5496BD;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 31px;
+   padding-bottom: 32px;
+   }
+
+ .filter-item {
+   margin: 0;
+   padding: 0;
+   border: none;
+   margin-right: 120px;
+   font-size: 14px;
+   line-height: 21px;
+   text-transform: uppercase;
+   color: var(--basic-white);
+   display: flex;
+   flex-direction: column;
+ }
+
+ .filter-item:last-child {
+   margin-left: auto;
+   margin-right: 0;
+ }
+
+ .filter-option {
+   margin-bottom: 22px;
+ }
+
+ .filter-item legend {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 21px;
+   text-transform: uppercase;
+   color: var(--basic-white);
+   margin-bottom: 29px;
+ }
+
+
+
+ .hotel-filter-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .range-controls {
+   width: 316px;
+   height: 55px;
+   text-align: center;
+
+   position: relative;
+
+ }
+
+ .range-controls .scale {
+   height: 2px;
+   width: 100%;
+   background: var(--basic-white);
+   opacity: 0.3;
+   position: absolute;
+   top: 20px
+ }
+
+ .range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-white);
+  position: absolute;
+  top: 20px;
+
+}
+
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  border: 15px solid var(--basic-white);
+  border-radius: 50%;
+  background-color: var(--toggle-color);
+  position: absolute;
+
+}
+
+.toggle-min {
+  left: 0;
+  top:-17px;
+}
+
+.toggle-max {
+  right: 0;
+  top:-17px;
+}
+
+
+
+ /*Footer*/
 
 .page-footer {
   background-color: var(--basic-white-transparent);
