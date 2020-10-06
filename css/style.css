@@ -66,6 +66,8 @@ button {
   position: relative;
 }
 
+
+
 .page {
   height: 100%;
 }
@@ -78,10 +80,6 @@ button {
   align-content: start;
 }
 
-.page-header {
-  margin-bottom: 70px;
-}
-
 .main-navigation {
   font-weight: bold;
   font-size: 14px;
@@ -92,6 +90,7 @@ button {
 .main-header-logo {
   position: absolute;
   left: 531px;
+  z-index: 3;
 
 }
 
@@ -108,8 +107,13 @@ button {
   top: 0;
 }
 
+.site-navigation li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .site-navigation li:nth-of-type(2) {
-  margin-right: 416px;
+  margin-right: 300px;
 }
 
 .site-navigation a{
@@ -131,30 +135,64 @@ button {
 
 .container-h {
   display: grid;
-  grid-template-rows: min-content min-content min-content;
+  grid-template-rows: 509px min-content min-content;
+  position: relative;
+}
+.container-h div {
+  grid-row: 1 / 2;
+  position: relative;
+}
+.foto-sedona-nature {
+  width: 1200px;
+  height: 509px;
+  display: block;
+  margin-top: 0;
+  padding-top: 0;
+  z-index: 2;
+
 }
 
-.container h1 {
+.container-h div::before {
+  content: "";
+  width: 1200px;
+  height: 272px;
+  background-image: url(../img/decor_img_main_page.png);
+  position: absolute;
+  bottom:-216px;
+  z-index: 0;
+}
+
+.container-h div:after {
+  content: "";
+  width: 456.65px;
+  height: 350.88px;
+  background-image: url(../img/welcome.png);
+  position: absolute;
+  z-index: 3;
+  top: 74.5px;
+  left: 375px;
+
+}
+
+.container-h h1 {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
   text-align: center;
-  margin-bottom: 54px;
-  margin-top: 44px;
+  margin-top: 43px;
+  z-index: 3;
+
 }
 
-.container h2 {
+.container-h h2 {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: var(--basic-black-text);
   text-align: center;
-  margin-bottom: 70px;
-}
-
-.foto-sedona-nature {
-  grid-row: 1 / 2;
+  margin-top: 30px;
+  z-index: 3;
 }
 
 .features-list {
@@ -172,23 +210,40 @@ button {
   grid-template-columns: repeat(3, 1fr);
 }
 
-features-list li:first-child {
+.features-item + div {
+  padding-bottom: 30px;
+}
+
+features-list features-item:first-child {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 256px 1fr;
 }
 
 .features-item img {
   grid-column-end: span 2;
+  width: 800px;
+  height: 256px;
+  padding: 0;
+  margin: 0;
+}
+
+.features-item:first-child img:first-of-type {
+   margin-top: 36px;
 }
 
 .features-item h3 {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
+  margin-top: 85px
 }
 
 .number {
   line-height: 21px;
+  margin-top: 28px;
+  margin-bottom: 25px;
 }
 
 .features-item-photo{
@@ -201,12 +256,62 @@ features-list li:first-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column: span 3;
+
 }
 
 .convenience-item {
   list-style: none;
   text-align: center;
   color: var(--basic-black-text);
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.convenience-item h3 {
+  margin-bottom: 26px
+}
+
+.convenience-item:first-child {
+   padding-right: 65px;
+}
+
+.convenience-item:nth-child(2) {
+  padding-right: 45px;
+}
+
+.convenience-item:last-child {
+  padding-right: 10px;
+}
+
+.convenience-item:first-child::before {
+  content:"";
+  background-image: url(../img/hotel.svg);
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  top: 65px;
+  left: 120px;
+}
+
+.convenience-item:nth-child(2)::before {
+  content:"";
+  background-image: url(../img/eat.svg);
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  top: 60px;
+  left: 135px;
+}
+
+.convenience-item:last-child::before {
+  content:"";
+  background-image: url(../img/souvenirs.svg);
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  top: 60px;
+  left: 155px;
 
 }
 
@@ -223,6 +328,12 @@ features-list li:first-child {
   background-color: var(--basic-light-grey);
   padding-top: 50px;
   padding-bottom: 60px;
+}
+
+.tourist-features h3 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .search-form {
@@ -452,9 +563,8 @@ features-list li:first-child {
  /*Hotel filter*/
 
  .filter {
-   background-image: url(/img/background-inner-page-filter.png);
+   background-image: url(../img/background-inner-page-filter.png);
    background-repeat: no-repeat;
-   background-color: #5496BD;
    display: flex;
    flex-wrap: wrap;
    padding-top: 31px;
