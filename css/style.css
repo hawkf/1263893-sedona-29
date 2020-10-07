@@ -231,7 +231,7 @@ features-list features-item:first-child {
    margin-top: 36px;
 }
 
-.features-item h3 {
+.features-item:first-child h3:first-of-type {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
