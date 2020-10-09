@@ -319,11 +319,12 @@ features-list features-item:first-child {
   line-height: 21px;
 }
 
-.search-hotel {
+.order-hotel {
   text-align: center;
+  position: relative;
 }
 
-.search-hotel h2 + p {
+.order-hotel h2 + p {
   font-weight: 700;
   font-size: 30px;
   line-height: 24px;
@@ -331,7 +332,8 @@ features-list features-item:first-child {
 
 }
 
-.search-hotel  .search-button {
+.order-hotel .search-button {
+  padding: 0;
   font-weight: 700;
   font-size: 21px;
   font-family:inherit;
@@ -345,25 +347,37 @@ features-list features-item:first-child {
   height: 86px;
 }
 
-.search-hotel .search-button:hover {
+.order-hotel .search-button:hover {
   background-color: var(--basic-brown-dark);
 }
 
-.search-hotel .search-button:focus {
+.order-hotel .search-button:focus {
   mix-blend-mode: normal;
   opacity: 0.3;
   background-color: var(--basic-brown-darker);
 }
 
+.search-form {
+  position: absolute;
+  left: 26.2%;
+}
 
-.hotel-search {
+.search-form fieldset {
+  padding: 0;
   border: 0;
   width: 568px;
   height: 395px;
   background: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  display: grid;
+}
 
+.hotel-search {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  justify-content: center;
+  align-content: space-between;
 }
 
 .hotel-search label,
@@ -378,17 +392,20 @@ features-list features-item:first-child {
   width: 346px;
   height: 38px;
   background-color: var(--rating-color);
+  border: 0;
 }
 
-.hotel-search input:last-child {
+.hotel-search div:nth-last-of-type(2) input:last-of-type {
   width: 114px;
   height: 38px;
 }
 
-.hotel-search input:nth-last-of-type(2) {
+.hotel-search div:last-of-type input:last-of-type {
   width: 114px;
   height: 38px;
 }
+
+
 
 .hotel-search button {
   width: 458px;
@@ -399,7 +416,9 @@ features-list features-item:first-child {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  border: 0;
 }
+
 /*Inner page*/
 
 .hotels-filter {
