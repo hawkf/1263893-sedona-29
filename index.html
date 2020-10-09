@@ -87,11 +87,26 @@
         </li>
       </ol>
     </section>
-    <section class="search-form">
+    <section class="search-hotel">
       <h2 class="visually-hidden">Форма поиска отеля</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="search-button" name="serch-hotel">поиск гостиницы в седоне</button>
+      <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset class="hotel-search">
+          <legend class="visually-hidden">Параметры поиска отелей</legend>
+          <label for="date-in-id">Дата заезда:</label>
+          <input type="date" name="date-in" id="date-in-id">
+          <label for="date-out-id">Дата выезда:</label>
+          <input type="date" name="date-out" id="date-out-id">
+          <label for="adults-id">Взрослые:</label>
+          <input type="number" name="adults" id="adults-id" step="1" min="0">
+          <label for="children-id">Дети:</label>
+          <input type="number" name="children" id="children-id" step="1" min="0">
+          <button type="submit">Найти</button>
+        </fieldset>
+
+      </form>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>

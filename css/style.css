@@ -319,37 +319,88 @@ features-list features-item:first-child {
   line-height: 21px;
 }
 
-.search-form {
+.search-hotel {
   text-align: center;
 }
 
-.search-form h2 + p {
+.search-hotel h2 + p {
   font-weight: 700;
   font-size: 30px;
   line-height: 24px;
   color: var(--basic-black);
+
 }
 
-.search-form  .search-button {
+.search-hotel  .search-button {
   font-weight: 700;
   font-size: 21px;
+  font-family:inherit;
   line-height: 26px;
   text-align: center;
   background-color: var(--basic-brown);
   color: var(--basic-white);
   vertical-align: middle;
   border: none;
+  width: 568px;
+  height: 86px;
 }
 
-.search-form .search-button:hover {
+.search-hotel .search-button:hover {
   background-color: var(--basic-brown-dark);
 }
 
-.search-form .search-button:focus {
+.search-hotel .search-button:focus {
   mix-blend-mode: normal;
   opacity: 0.3;
   background-color: var(--basic-brown-darker);
 }
+
+
+.hotel-search {
+  border: 0;
+  width: 568px;
+  height: 395px;
+  background: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  display: grid;
+
+}
+
+.hotel-search label,
+.hotel-search input {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+
+}
+
+.hotel-search input {
+  width: 346px;
+  height: 38px;
+  background-color: var(--rating-color);
+}
+
+.hotel-search input:last-child {
+  width: 114px;
+  height: 38px;
+}
+
+.hotel-search input:nth-last-of-type(2) {
+  width: 114px;
+  height: 38px;
+}
+
+.hotel-search button {
+  width: 458px;
+  height: 58px;
+  background-color: var(--basic-turquoise);
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+/*Inner page*/
 
 .hotels-filter {
   background-image: url(img/background-inner-page-filter);
@@ -364,10 +415,6 @@ features-list features-item:first-child {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.found {
-  margin-right: 48px;
 }
 
 .sort {
@@ -400,6 +447,7 @@ features-list features-item:first-child {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-right: 48px;
 }
 
 .sort, .sort-list {
@@ -671,12 +719,6 @@ features-list features-item:first-child {
   font-size: 14px;
   align-self: center;
 }
-
-
-.map {
-
-}
-
 
  /*Footer*/
 
