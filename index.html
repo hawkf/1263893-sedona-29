@@ -90,7 +90,7 @@
     <section class="order-hotel">
       <h2 class="visually-hidden">Форма поиска отеля</h2>
       <p>Заинтересовались?</p>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="search-button" type="button" name="serch-hotel">поиск гостиницы в седоне</button>
       <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset>
@@ -106,11 +106,11 @@
           </div>
           <div>
             <label for="adults-id">Взрослые:</label>
-            <input class="input-data" type="number" name="adults" id="adults-id" step="1" min="0">
+            <input class="input-data" type="number" name="adults" id="adults-id" step="1" min="1" value="1">
           </div>
           <div>
             <label for="children-id">Дети:</label>
-            <input class="input-data" type="number" name="children" id="children-id" step="1" min="0">
+            <input class="input-data" type="number" name="children" id="children-id" step="1" min="0" value="0">
           </div>
           <button type="submit">Найти</button>
         </div>
