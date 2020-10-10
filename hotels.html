@@ -32,57 +32,69 @@
       <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
           <legend>Инфраструктура:</legend>
-            <ul class="hotel-filter-list">
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-                <label for="filter-swimming-pool">Бассейн</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
-                <label for="filter-parking">Парковка</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wifi" id="filter-wifi">
-                <label for="filter-wifi">Wi-Fi</label>
-              </li>
-            </ul>
+          <ul class="hotel-filter-list">
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="swimming-pool"
+                id="filter-swimming-pool" checked>
+              <label for="filter-swimming-pool">Бассейн</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking"
+                id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wifi"
+                id="filter-wifi">
+              <label for="filter-wifi">Wi-Fi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="filter-item">
           <legend>Тип жилья:</legend>
           <ul class="hotel-filter-list">
             <li class="filter-option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel"
+                id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel"
+                id="filter-motel" checked>
               <label for="filter-motel">Мотель</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments"
+                id="filter-apartments" checked>
               <label for="filter-apartments">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter-item">
           <legend>Стоимость в сутки (Р):</legend>
-          <div class="range-filter">
-            <div class="price-controls">
-              <label class="min-price" for="filter-min-price">от</label>
-              <input type="number" name="min-price" id="filter-min-price" value="0">
-              <label class="min-price" for="filter-max-price">до</label>
-              <input type="number" name="max-price" id="filter-max-price" value="3000">
-            </div>
-            <div class="range-controls">
-              <div class="scale">
+          <div class="price-controls-options">
+            <div class="range-filter">
+              <div class="price-controls">
+                <div>
+                  <label class="min-price" for="filter-min-price">от</label>
+                  <input type="text" name="min-price" id="filter-min-price" value="0">
+                </div>
+                <div>
+                  <label class="max-price" for="filter-max-price">до</label>
+                  <input type="text" name="max-price" id="filter-max-price" value="3000">
+                </div>
               </div>
-              <div class="bar">
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+              <div class="range-controls">
+                <div class="scale">
+                </div>
+                <div class="bar">
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
               </div>
             </div>
+            <button class="filter-button" type="button" name="show">Показать</button>
           </div>
-          <button class="filter-button" type="button" name="show">Показать</button>
         </fieldset>
       </form>
     </section>
@@ -104,8 +116,10 @@
         </ul>
       </div>
       <div class="button-up-down">
-        <button class="up-button" type="button" name="up"> <img src="img/icon-up-dir.svg" width="11"  height="10" alt="" /></button>
-        <button class="down-button" type="button" name="down"> <img src="img/icon-down-dir.svg" width="11" height="10" alt="" /></button>
+        <button class="up-button" type="button" name="up"> <img src="img/icon-up-dir.svg" width="11" height="10"
+            alt="" /></button>
+        <button class="down-button" type="button" name="down"> <img src="img/icon-down-dir.svg" width="11" height="10"
+            alt="" /></button>
       </div>
     </section>
     <section>
@@ -184,7 +198,7 @@
     </section>
   </main>
   <footer class="container">
-    <div class="page-footer">
+    <div class="page-footer inner-page">
       <div class="footer-contacts">
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <p>

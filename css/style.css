@@ -515,6 +515,8 @@ features-list features-item:first-child {
 
 .hotels-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 
@@ -527,8 +529,11 @@ features-list features-item:first-child {
 }
 
 .description {
-  display: grid;
-  grid-template-rows: min-content min-content min-content;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .hotel-class {
@@ -663,6 +668,7 @@ features-list features-item:first-child {
    padding: 0;
    border: none;
    margin-right: 120px;
+   margin-left: 27px;
    font-size: 14px;
    line-height: 21px;
    text-transform: uppercase;
@@ -673,12 +679,42 @@ features-list features-item:first-child {
 
  .filter-item:last-child {
    margin-left: auto;
-   margin-right: 0;
+   margin-right: 73px;
+
  }
+
+ .hotel-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+}
 
  .filter-option {
    margin-bottom: 22px;
+   position: relative;
+   display: block;
+   cursor: pointer;
+   user-select: none;
  }
+
+ .filter-input-checkbox:checked + label::before {
+   content: "";
+   position: absolute;
+   left: -39px;
+   width: 27px;
+   height: 23px;
+   background-image: url(../img/checkbox-on.svg);
+ }
+
+ .filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+}
 
  .filter-item legend {
    font-weight: 700;
@@ -689,12 +725,15 @@ features-list features-item:first-child {
    margin-bottom: 29px;
  }
 
+ .filter-item:last-of-type {
 
+ }
 
- .hotel-filter-list {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+ .price-controls-options {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 317px;
  }
 
  .range-controls {
@@ -725,23 +764,21 @@ features-list features-item:first-child {
 }
 
 .range-controls .toggle {
-  width: 4px;
-  height: 4px;
-  border: 15px solid var(--basic-white);
-  border-radius: 50%;
-  background-color: var(--toggle-color);
+  width: 19px;
+  height: 21px;
+  background-image: url(../img/filter-button.svg);
   position: absolute;
 
 }
 
 .toggle-min {
   left: 0;
-  top:-17px;
+  top: -10px;
 }
 
 .toggle-max {
   right: 0;
-  top:-17px;
+  top: -10px;
 }
 
 .price-controls {
@@ -750,12 +787,30 @@ features-list features-item:first-child {
   border: 2px solid var(--basic-white);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
 
+.min-price::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: var(--basic-white);
+  transform: rotate(90deg);
+  position: absolute;
+  top: 15px;
+  left: 50%;
+}
 
+.price-controls div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .price-controls input {
+  width: 40px;
   display: inline-block;
   border: none;
   background-color: transparent;
@@ -792,7 +847,10 @@ features-list features-item:first-child {
   padding-left: 128px;
   padding-right: 140px;
   box-sizing: border-box;
+}
 
+.page-footer.inner-page {
+  position: static;
 }
 
 .footer-contacts {
