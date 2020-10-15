@@ -301,7 +301,7 @@ features-list features-item:first-child {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
 }
 
@@ -324,6 +324,8 @@ features-list features-item:first-child {
 .order-hotel {
   text-align: center;
   position: relative;
+
+  box-sizing: border-box;
 }
 
 .order-hotel h2 + p {
@@ -334,11 +336,12 @@ features-list features-item:first-child {
 }
 
 .order-hotel p:last-of-type {
-   margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .order-hotel .search-button {
   padding: 0;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   font-family:inherit;
@@ -380,41 +383,43 @@ features-list features-item:first-child {
   display: flex;
   flex-wrap: wrap;
   padding: 56px 55px 56px 55px;
-  justify-content: space-between;
+
 }
 
-.hotel-search div {
+.hotel-search .hotel-search-fields {
   margin-bottom: 29px;
   display: flex;
-  width: 100%;
+  height: min-content;
   justify-content: space-between;
   align-items: center;
-}
-
-.hotel-search div:last-of-type,
-.hotel-search div:nth-last-of-type(2) {
-  width: 50%;
-  margin-bottom: 50px;
-}
-
-.hotel-search div:last-of-type label {
-  margin-left: 50px;
-}
-
-.hotel-search div:last-of-type input,
-.hotel-search div:nth-last-of-type(2) input {
-  text-align: center;
+  width: 100%;
   position: relative;
 }
 
-.hotel-search div:last-of-type input::before,
-.hotel-search div:nth-last-of-type(2) input::before {
-  content: "";
-  width: 12px;
-  height: 3px;
-  background-color: var(--sine-color);
-  display:inline-block
+.calendar-button {
   position: absolute;
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+  right: 10px;
+  top: 5px
+}
+
+.hotel-search .hotel-search-fields:nth-last-of-type(2),
+.hotel-search .hotel-search-fields:last-of-type {
+  width: 50%;
+  margin-bottom: 55px;
+}
+
+.hotel-search .hotel-search-fields:last-of-type {
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+.hotel-search .hotel-search-fields:nth-last-of-type(2) {
+  box-sizing: border-box;
+  padding-right: 2px;
 }
 
 .hotel-search label,
@@ -422,29 +427,56 @@ features-list features-item:first-child {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-
 }
 
 .hotel-search input {
   width: 346px;
   height: 38px;
   background-color: var(--rating-color);
-  border: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-left: 15px;
+  text-transform: uppercase;
+  box-sizing: border-box;
 }
 
-.hotel-search div:nth-last-of-type(2) input:last-of-type {
+.hotel-search .increment-buttons {
+  background-color: var(--rating-color);
+  box-sizing: border-box;
   width: 114px;
-  height: 38px;
+  position: relative;
 }
 
-.hotel-search div:last-of-type input:last-of-type {
-  width: 114px;
-  height: 38px;
+.increment-buttons input {
+  width:30px;
+  padding: 0;
+  text-align: center;
 }
 
+.plus-button,
+.minus-button {
+  background-color: transparent;
+  border-width: 0;
+  color: var(--sine-color);
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  position: absolute;
+  top: 10px;
+}
 
+.plus-button {
+   right: 14px;
+   top: 10px;
+}
 
-.hotel-search button {
+.minus-button{
+  left: 12px;
+  top: 7px;
+}
+
+.hotel-search .button-search-hotel {
   width: 458px;
   height: 58px;
   background-color: var(--basic-turquoise);
@@ -454,6 +486,16 @@ features-list features-item:first-child {
   font-size: 21px;
   line-height: 26px;
   border: 0;
+}
+
+.hotel-search .button-search-hotel:hover,
+.hotel-search .button-search-hoteln:focus {
+  background-color: var(--basic-turquoise-dark);
+}
+
+.hotel-search .button-search-hotel:active {
+  color: var(--basic-white-transparenter);
+  background-color: var(--basic-turquise-darker);
 }
 
 /*Inner page*/
@@ -839,7 +881,7 @@ features-list features-item:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 135px;
+  height: 120px;
   width: 100%;
   position: absolute;
   bottom: 0;
