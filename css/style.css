@@ -17,6 +17,7 @@
   --toggle-color: #ABABAB;
   --copyrite-active: #BDBBBC;
   --sine-color:  #A9A9A9;
+  --border-section-inner-page: #E5E5E5;
   }
 
 
@@ -500,6 +501,16 @@ features-list features-item:first-child {
 
 /*Inner page*/
 
+.inner-page section:not(:first-of-type) {
+  margin-left: 72px;
+}
+
+inner-page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .hotels-filter {
   background-image: url(img/background-inner-page-filter);
 }
@@ -507,6 +518,7 @@ features-list features-item:first-child {
 .hotel-sort {
   display: grid;
   grid-template-columns: 1fr 34px;
+  vertical-align: middle;
 }
 
 .hotel-sort-type {
@@ -568,13 +580,17 @@ features-list features-item:first-child {
   display: grid;
   grid-template-columns: 135px 1fr min-content;
   gap: 29px;
+  border-bottom: 1px solid var(--border-section-inner-page);
+  border-top: 1px solid var(--border-section-inner-page);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .description {
   height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
 }
 
@@ -616,6 +632,8 @@ features-list features-item:first-child {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  display: inline-block;
+  padding: 0;
  }
 
  .hotel-name:hover,
@@ -701,8 +719,10 @@ features-list features-item:first-child {
    background-repeat: no-repeat;
    display: flex;
    flex-wrap: wrap;
-   padding-top: 31px;
+   padding-top: 25px;
    padding-bottom: 32px;
+   padding-left: 70px;
+   box-sizing: border-box;
    }
 
  .filter-item {
@@ -710,13 +730,10 @@ features-list features-item:first-child {
    padding: 0;
    border: none;
    margin-right: 120px;
-   margin-left: 27px;
    font-size: 14px;
    line-height: 21px;
    text-transform: uppercase;
    color: var(--basic-white);
-   display: flex;
-   flex-direction: column;
  }
 
  .filter-item:last-child {
@@ -730,6 +747,9 @@ features-list features-item:first-child {
   padding: 0;
   margin: 0;
   margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
  .filter-option {
@@ -758,6 +778,24 @@ features-list features-item:first-child {
   background-image: url(../img/checkbox-off.svg);
 }
 
+.filter-input-checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off-disabled.svg);
+}
+
  .filter-item legend {
    font-weight: 700;
    font-size: 16px;
@@ -767,14 +805,14 @@ features-list features-item:first-child {
    margin-bottom: 29px;
  }
 
- .filter-item:last-of-type {
-
+ .filter-item:last-of-type legend:last-of-type {
+  margin-bottom: 12px;
  }
 
  .price-controls-options {
    display: flex;
+   flex-direction: column;
    flex-wrap: wrap;
-   justify-content: center;
    width: 317px;
  }
 
@@ -782,7 +820,6 @@ features-list features-item:first-child {
    width: 316px;
    height: 55px;
    text-align: center;
-
    position: relative;
 
  }
@@ -797,7 +834,7 @@ features-list features-item:first-child {
  }
 
  .range-controls .bar {
-  width: 70%;
+  width: 86%;
   height: 2px;
   background: var(--basic-white);
   position: absolute;
@@ -810,17 +847,22 @@ features-list features-item:first-child {
   height: 21px;
   background-image: url(../img/filter-button.svg);
   position: absolute;
+  top: -9px
+}
 
+.range-controls .toggle:hover {
+  top: -10px;
+  width: 23px;
+  height: 24px;
+  background-image: url(../img/filter-button-hover.svg);
 }
 
 .toggle-min {
   left: 0;
-  top: -10px;
 }
 
 .toggle-max {
   right: 0;
-  top: -10px;
 }
 
 .price-controls {
@@ -841,7 +883,7 @@ features-list features-item:first-child {
   transform: rotate(90deg);
   position: absolute;
   top: 15px;
-  left: 50%;
+  left: 47%;
 }
 
 .price-controls div {
@@ -849,15 +891,16 @@ features-list features-item:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .price-controls input {
-  width: 40px;
-  display: inline-block;
+  width: 30px;
   border: none;
   background-color: transparent;
   color: var(--basic-white);
-  margin-left: 5px;
+  margin-left: 2px;
+
 
 }
 
@@ -870,8 +913,14 @@ features-list features-item:first-child {
   color: var(--basic-white);
   text-transform: uppercase;
   font-size: 14px;
-  align-self: center;
+  align-self: flex-start;
+  margin-left: 85px;
+}
 
+.filter-button:hover,
+.filter-button:focus {
+   background-color: var(--basic-white);
+   color: var(--basic-black);
 }
 
  /*Footer*/
@@ -891,7 +940,7 @@ features-list features-item:first-child {
   box-sizing: border-box;
 }
 
-.page-footer.inner-page {
+.inner-page {
   position: static;
 }
 
