@@ -105,21 +105,27 @@
         <p class="sort">Сортировка:</p>
         <ul class="sort-list">
           <li class="sort-item">
-            <button type="button">По цене</button>
+            <button class="button-sort-type" type="button">По цене</button>
           </li>
           <li class="sort-item">
-            <button type="button">По типу</button>
+            <button class="button-sort-type" type="button">По типу</button>
           </li>
           <li class="sort-item">
-            <button type="button">По рейтингу</button>
+            <button class="button-sort-type" type="button">По рейтингу</button>
           </li>
         </ul>
       </div>
       <div class="button-up-down">
-        <button class="up-button" type="button" name="up"> <img src="img/icon-up-dir.svg" width="11" height="10"
-            alt="" /></button>
-        <button class="down-button" type="button" name="down"> <img src="img/icon-down-dir.svg" width="11" height="10"
-            alt="" /></button>
+        <button class="up-button" type="button" name="up">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+          </svg>
+        </button>
+        <button class="down-button" type="button" name="down">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA" />
+          </svg>
+        </button>
       </div>
     </section>
     <section>
@@ -198,12 +204,12 @@
     </section>
   </main>
   <footer class="container">
-    <div class="page-footer inner-page">
+    <div class="page-footer inner-page-footer">
       <div class="footer-contacts">
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <p>
-          #VISITSEDONA<br>
-          ТЕЛ:+7(495) 666-01-66
+          <div class="tag">#VISITSEDONA</div>
+          <div>ТЕЛ:+7(495) 666-01-66</div>
         </p>
       </div>
       <div class="footer-social">
