@@ -417,6 +417,16 @@ features-list features-item:first-child {
   top: 5px
 }
 
+.calendar-button:hover path,
+.calendar-button:focus path {
+  fill: black;
+}
+
+.calendar-button:active path {
+  fill: #81B3D2;
+}
+
+
 .hotel-search .hotel-search-fields:nth-last-of-type(2),
 .hotel-search .hotel-search-fields:last-of-type {
   width: 50%;
@@ -487,6 +497,26 @@ features-list features-item:first-child {
   position: absolute;
   top: 10px;
 }
+
+
+.minus-button:hover rect,
+.minus-button:focus rect{
+  fill: black
+}
+
+.plus-button:hover path,
+.plus-button:focus path {
+  fill: black;
+}
+
+.minus-button:active rect {
+  fill: #81B3D2;
+}
+
+.plus-button:active path {
+  fill: #81B3D2;
+}
+
 
 .plus-button {
    right: 14px;
