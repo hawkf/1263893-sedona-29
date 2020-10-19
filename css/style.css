@@ -18,6 +18,8 @@
   --copyrite-active: #BDBBBC;
   --sine-color:  #A9A9A9;
   --border-section-inner-page: #E5E5E5;
+  --input-hover: #EBEBEB;
+  --body-background: #F2F2F2;
   }
 
 
@@ -32,8 +34,7 @@ body {
   font-weight: 400;
   color: var(--basic-black-text);
   text-transform: uppercase;
-  background-color: #888888 ;
-
+  height: 100%;
 }
 
 a {
@@ -67,6 +68,8 @@ button {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 
@@ -76,7 +79,7 @@ button {
 }
 
 .page-body {
-  background-color: var(--basic-white);
+  background-color: var(--body-background);
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -161,8 +164,8 @@ button {
   height: 272px;
   background-image: url(../img/decor_img_main_page.png);
   position: absolute;
-  bottom:-216px;
-  z-index: -1;
+  bottom:-214px;
+
 }
 
 .container-h div:after {
@@ -183,6 +186,7 @@ button {
   color: var(--basic-black);
   text-align: center;
   margin-top: 43px;
+  z-index: 1;
 }
 
 .container-h h2 {
@@ -193,6 +197,7 @@ button {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
+  z-index: 1;
 }
 
 .features-list {
@@ -228,12 +233,17 @@ features-list features-item:first-child {
   line-height: 21px;
 }
 
-.features-item-photo .features-item-news {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  margin:auto;
+.features-item-news {
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.features-item-news h3 {
+  margin-bottom: 30px;
+}
+
+.features-item-news .number {
+  margin-bottom: 20px;
 }
 
 .features-item-photo{
@@ -434,11 +444,22 @@ features-list features-item:first-child {
   width: 346px;
   height: 38px;
   background-color: var(--rating-color);
+
   border: none;
   outline: none;
   padding: 0;
   padding-left: 15px;
   text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.hotel-search input:hover {
+  background-color: var(--input-hover);
+}
+
+.hotel-search input:focus {
+  background-color: transparent;
+  border: 2px solid var(--border-section-inner-page);
   box-sizing: border-box;
 }
 
@@ -950,6 +971,11 @@ inner-page-main {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  align-self: start;
+}
+
+.tag {
+  margin-bottom: 7px;
 }
 
 .social-list {
