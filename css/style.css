@@ -86,6 +86,11 @@ button {
   align-content: start;
 }
 
+.page-header {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .main-navigation {
   font-weight: bold;
   font-size: 14px;
@@ -104,23 +109,25 @@ button {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 73px;
-  margin-right: 73px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 56px;
   position: relative;
   top: 0;
 }
 
 .site-navigation li {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.site-navigation li:nth-of-type(2) {
-  margin-right: 300px;
+.site-navigation li:last-of-type,
+.site-navigation li:nth-last-of-type(2) {
+  justify-content: flex-end;
 }
+
+
 
 .site-navigation a{
   color: var(--basic-black);
