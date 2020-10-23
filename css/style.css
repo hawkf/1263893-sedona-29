@@ -1019,18 +1019,24 @@ inner-page-main {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
 
+.price-controls div:first-child {
+  padding-left: 65px;
+}
+
+.price-controls div:last-child {
+  padding-left: 45px;
 }
 
 .price-controls input {
   width: 30px;
   border: none;
+  outline: none;
   background-color: transparent;
   color: var(--basic-white);
   margin-left: 2px;
-
-
 }
 
 .filter-button {
