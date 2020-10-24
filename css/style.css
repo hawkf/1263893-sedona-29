@@ -384,6 +384,10 @@ features-list features-item:first-child {
   left: 26.2%;
 }
 
+.search-form-hidden {
+  display: none;
+}
+
 .search-form fieldset {
   padding: 0;
   border: 0;
@@ -1154,6 +1158,26 @@ inner-page-main {
 
 .copyright a:active path {
   fill: var(--copyrite-active);
+}
+
+/*Animation*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-80px);
+  }
+
+  70% {
+    transform: translateY(-50px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 
