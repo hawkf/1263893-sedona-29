@@ -121,6 +121,10 @@ button {
   grid-column: 4/5;
 }
 
+.site-navigation li:last-child {
+  margin-left: 20px;
+}
+
 .site-navigation a{
   color: var(--basic-black);
 }
