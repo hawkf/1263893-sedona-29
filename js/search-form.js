@@ -6,4 +6,5 @@ searchForm.classList.toggle("search-form-hidden");
 searchButton.addEventListener("click", function(evt) {
 
   searchForm.classList.toggle("search-form-hidden");
+  searchForm.classList.toggle("search-form-show");
 });
