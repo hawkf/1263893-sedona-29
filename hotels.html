@@ -20,7 +20,7 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a class="active-on-page" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </div>
@@ -88,8 +88,8 @@
                 <div class="scale">
                 </div>
                 <div class="bar">
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@
         <p class="sort">Сортировка:</p>
         <ul class="sort-list">
           <li class="sort-item">
-            <button class="button-sort-type" type="button">По цене</button>
+            <button class="button-sort-type active" type="button">По цене</button>
           </li>
           <li class="sort-item">
             <button class="button-sort-type" type="button">По типу</button>
@@ -121,7 +121,7 @@
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
           </svg>
         </button>
-        <button class="down-button" type="button" name="down">
+        <button class="down-button up-down-button-checked" type="button" name="down">
           <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Сортировка вниз">
             <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA" />
           </svg>

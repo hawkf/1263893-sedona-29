@@ -144,6 +144,10 @@ button {
   opacity: 0.3;
 }
 
+.site-navigation a.active-on-page {
+  color: var(--basic-brown);
+}
+
 
 
 .container-h {
@@ -265,7 +269,9 @@ features-list features-item:first-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column: span 3;
-
+  box-sizing: border-box;
+  padding-top: 140px;
+  padding-bottom: 70px;
 }
 
 .convenience-item {
@@ -273,8 +279,7 @@ features-list features-item:first-child {
   text-align: center;
   color: var(--basic-black-text);
   position: relative;
-  padding-top: 140px;
-  padding-bottom: 70px;
+
 }
 
 .convenience-item h3 {
@@ -288,7 +293,7 @@ features-list features-item:first-child {
   width: 75px;
   height: 72px;
   position: absolute;
-  top: 18%;
+  top: -80px;
   left: 40%;
 }
 
@@ -298,7 +303,7 @@ features-list features-item:first-child {
   width: 75px;
   height: 70px;
   position: absolute;
-  top: 18%;
+  top: -80px;
   left: 40%;
 }
 
@@ -308,7 +313,7 @@ features-list features-item:first-child {
   width: 64px;
   height: 77px;
   position: absolute;
-  top: 16%;
+  top: -85px;
   left: 42%;
 
 }
@@ -396,11 +401,14 @@ features-list features-item:first-child {
 
 .search-form-hidden {
   display: none;
-  height: 0px;
 }
 
 .search-form-show {
-  display: block;
+  animation-name: sizing;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: center top;
 }
 
 .search-form fieldset {
@@ -601,7 +609,7 @@ inner-page-main {
 }
 
 .hotels-filter {
-  height: 217px;
+  height: min-content;
   background-color: var(--basic-turquise-darker);
   background-image: url(img/background-inner-page-filter);
   margin-bottom: 6px;
@@ -656,14 +664,17 @@ inner-page-main {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  outline: none;
+}
 
+.button-sort-type.active {
+  border-bottom: none;
+  color: var(--basic-turquoise);
 }
 
 .button-sort-type:hover,
 .sbutton-sort-type:focus {
   color: var(--basic-turquoise);
-  outline: none;
+
 }
 
 .button-sort-type:active {
@@ -696,6 +707,10 @@ inner-page-main {
   cursor: pointer;
 }
 
+.button-up-down .up-down-button-checked path{
+  fill: var(--basic-turquoise);
+}
+
 .found {
   font-size: 21px;
   line-height: 26px;
@@ -708,16 +723,19 @@ inner-page-main {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
 .hotel-item {
   display: grid;
   grid-template-columns: 135px 1fr min-content;
+  grid-template-rows: min-content;
   gap: 29px;
   margin-bottom: 61px;
   position: relative;
   box-sizing: border-box;
+  height: min-content;
 }
 
 .hotel-item::before {
@@ -741,8 +759,8 @@ inner-page-main {
 }
 
 .description {
-  height: 90px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -871,11 +889,11 @@ inner-page-main {
 
  .filter {
    background-image: url(../img/background-inner-page-filter.png);
+   background-size: cover;
    background-repeat: no-repeat;
    display: flex;
    flex-wrap: wrap;
    padding-top: 25px;
-   padding-bottom: 32px;
    padding-left: 70px;
    box-sizing: border-box;
    }
@@ -885,6 +903,7 @@ inner-page-main {
    padding: 0;
    border: none;
    margin-right: 120px;
+   margin-bottom: 15px;
    font-size: 14px;
    line-height: 21px;
    text-transform: uppercase;
@@ -903,6 +922,7 @@ inner-page-main {
   margin: 0;
   margin-left: 40px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -915,11 +935,9 @@ inner-page-main {
    user-select: none;
  }
 
- .filter-input-checkbox:focus + label,
- .filter-input-checkbox:hover + label {
+ .filter-input-checkbox:focus + label {
    box-sizing: border-box;
-   border-color: var(--basic-black);
-   border-width: 1px;
+   border: 1px solid var(--basic-black);
  }
 
  .filter-input-checkbox:checked + label::before {
@@ -1200,9 +1218,13 @@ inner-page-main {
 
 /*Animation*/
 
-@keyframes bounce {
-  to {
-    height: 0px;
+@keyframes sizing {
+  0% {
+    transform: scaleY(0)
+  }
+
+  100% {
+    transform: scaleY(1);
   }
 }
 
