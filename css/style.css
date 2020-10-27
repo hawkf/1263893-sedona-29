@@ -405,7 +405,7 @@ features-list features-item:first-child {
 
 .search-form-show {
   animation-name: sizing;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   transform-origin: center top;
@@ -589,6 +589,7 @@ features-list features-item:first-child {
 
 .map {
   min-height: 594px;
+  background-color: var(--basic-turquoise);
 }
 
 /*Inner page*/
