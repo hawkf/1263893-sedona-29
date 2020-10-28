@@ -119,8 +119,13 @@ button {
   align-items: center;
 }
 
+.site-navigation li:nth-child(2) {
+  padding-right: 20px ;
+}
+
 .site-navigation li:nth-child(3) {
   grid-column: 4/5;
+  padding-left: 35px;
 }
 
 .site-navigation li:last-child {
